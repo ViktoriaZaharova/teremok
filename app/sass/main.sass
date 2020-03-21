@@ -1,0 +1,2053 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  overflow-x: hidden
+  color: #222222
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  transition: .3s ease
+  outline: none
+  text-decoration: none
+
+  &:hover, &:focus
+    outline: none
+    text-decoration: none
+    color: #18BA3C
+
+button, .btn
+  outline: none
+  box-shadow: none
+  border: none
+    radius: 0
+  padding: 0
+  box-sizing: border-box
+  transition: .3s ease
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 48px
+  width: 183px
+  line-height: normal
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+    background: transparent
+
+.btn-accent
+  border-radius: 3px
+  text-align: center
+  background: #18BA3C
+  font-size: 11px
+  font-family: $museo
+  font-weight: bold
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  color: #fff
+
+  &:hover
+    background: #46D866
+    color: #fff
+
+.card-link
+  width: 127px
+  height: 48px
+  border: 1px solid #18BA3C
+    radius: 3px
+  text-transform: uppercase
+  color: #222222
+  letter-spacing: 0.1em
+  font-size: 11px
+  font-family: $museo
+  font-weight: bold
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+  &:hover
+    background: #18BA3C
+    color: #fff
+
+.color-accent
+  color: #46D866
+  border-bottom: 1px dashed #18BA3C
+
+input, .form-control
+  box-sizing: border-box
+  outline: none
+  padding: 0
+  border: none
+    radius: 0
+  transition: .3s ease
+  height: auto
+  width: 100%
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+    box-sizing: border-box
+
+label
+  display: block
+
+h1
+  font-size: 56px
+  font-weight: bold
+  line-height: 64px
+  max-width: 733px
+
+h2
+  width: 100%
+  font-size: 48px
+  font-weight: bold
+
+.title-page
+  font-size: 48px
+  line-height: 64px
+  margin: 0 0 42px
+  max-width: none
+  width: 100%
+
+.w-100
+  width: 100%
+
+.bg-violet
+  background: linear-gradient(0deg, #CFA7EE, #CFA7EE)
+
+.bg-yellow
+  background: #FEE7AD
+
+.bg-grey
+  background: #FAF8F5
+
+.position-relative
+  position: relative
+
+.links-title
+  color: #18BA3C
+  font-size: 48px
+  line-height: 56px
+  font-weight: bold
+
+  display: inline-block
+
+  span
+    border-bottom: 1px dashed #18BA3C
+
+.title-line
+  display: flex
+  align-items: center
+
+  h2
+    width: auto
+    position: relative
+    line-height: 56px
+
+  .links-title
+    padding: 0 0 0 30px
+    margin: 0 0 0 30px
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0, -50%) rotate(30deg)
+      width: 1px
+      height: 100%
+      background: #000
+
+  .links
+    text-transform: uppercase
+    color: #222222
+    font-size: 11px
+    font-weight: bold
+    font-family: $museo
+    letter-spacing: 0.1em
+    margin: auto 0 10px 86px
+
+.container
+  max-width: 1120px
+
+//header
+.header-top
+  padding: 40px 0
+  border-bottom: 1px solid #E2E2E2
+
+.header-bottom
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09)
+  position: relative
+  z-index: 1
+
+.logo
+  font-weight: bold
+  color: #222222
+  font-size: 21px
+  display: flex
+  align-items: center
+  text-transform: uppercase
+
+.logo__icon
+  width: 33px
+  min-width: 33px
+  height: 33px
+  margin: 0 22px 0 0
+
+svg
+  display: inline-block
+  width: 100%
+  height: 100%
+  transition: .3s ease
+
+span
+  display: inline-block
+
+.logo__motto
+  color: #999999
+  font-size: 14px
+  padding: 0 0 0 26px
+  max-width: 140px
+  width: 100%
+  line-height: 24px
+  margin: 0 0 0 24px
+  font-family: $museo
+  border:
+    left: 1px solid #C4C4C4
+
+.logo-wrapper
+  display: flex
+  align-items: center
+
+.list-group-item
+  border: none
+    radius: 0
+  padding: 0
+  display: flex
+  align-items: center
+  margin: 0 0 10px
+  color: #222222
+  text-transform: uppercase
+  font-size: 11px
+  font-family: $museo
+  font-weight: 600
+  background: transparent
+
+  &:last-child
+    margin: 0
+
+.list-group-item__icon
+  width: 16px
+  height: 17px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 14px 0 0
+
+.list-group-item__text
+  border:
+    bottom: 1px dashed #222222
+
+.box-contacts
+  margin: 0 0 0 86px
+  font-family: $museo
+  font-size: 14px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  p
+    color: #999999
+    margin: 0 0 8px
+
+  a
+    color: #222222
+    border:
+      bottom: 1px dashed #222222
+
+.list-social
+  display: flex
+  align-items: center
+  margin: 0 0 auto auto
+
+.list-social__links
+  margin: 0 -2px 0 0
+  width: 20px
+  height: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &:last-child
+    margin: 0
+
+  &:first-child
+    z-index: 2
+
+  &:nth-child(2)
+    z-index: 1
+
+.phone
+  font-size: 20px
+  font-weight: 300
+  font-family: $museo
+  color: #222222
+  line-height: 24px
+
+.navbar-toggler
+  display: none
+
+.icon-home
+  fill: none
+  width: 16px
+  height: 12px
+
+.navbar
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.navbar-expand-md .navbar-nav .nav-link
+  padding: 13px 18px 18px
+
+
+.nav-link
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  padding: 13px 18px
+  position: relative
+  font-family: $museo
+  font-weight: 600
+  color: #222222
+  font-size: 11px
+  text-transform: uppercase
+  line-height: 40px
+  height: 100%
+  border:
+    top: 3px solid transparent
+
+  &:hover
+    border-color: #18BA3C
+
+.nav-link__quantity
+  position: absolute
+  right: 0
+  color: #999999
+  font-size: 9px
+  bottom: 30px
+
+.nav-item
+  margin: 0 46px 0 0
+
+  &:last-child
+    margin: 0
+
+.navbar-nav
+  display: flex
+  align-items: stretch
+
+.navbar-collapse
+  flex-basis: auto
+
+.btn-outline-success
+  width: 13px
+  height: 14px
+
+  &:hover, &:focus
+    svg
+      fill: #18BA3C
+
+.form-search
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+
+//main
+main
+  position: relative
+  background: url("../img/bg1.png") no-repeat center
+    size: cover
+  padding: 190px 0 208px
+  color: #fff
+  z-index: 2
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #1a1b24
+    opacity: .35
+
+.main-price
+  display: flex
+  align-items: center
+  margin: 43px 0 27px
+  font-family: $museo
+
+.main-price__icon
+  width: 13px
+  margin: 0 21px 0 0
+
+
+//catalog
+.catalog
+  padding: 131px 0 144px
+  position: relative
+
+  h2
+    margin: 0 0 64px
+
+.catalog__bg
+  .img
+    position: absolute
+
+  .img3
+    top: 18px
+    right: 0
+
+  .img1
+    top: 124px
+    left: 154px
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+    filter: blur(9px)
+    width: 132px
+
+  .img2
+    left: 50px
+    top: 202px
+    transform: matrix(0.35, 0.94, 0.94, -0.35, 0, 0)
+    opacity: .7
+    filter: blur(9px)
+    width: 83px
+
+.nav-pills
+  width: 100%
+  justify-content: center
+  margin: 0 0 55px
+
+  .nav-item
+    margin: 0 48px 0 0
+
+  .nav-link
+    border: none
+      radius: 0
+    padding: 0
+    display: flex
+    align-items: center
+    color: #222222
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 11px
+    line-height: 18px
+    font-family: $museo
+
+.nav-link__text
+  border-bottom: 1px dashed #222222
+  transition: .3s ease
+
+.nav-link__icon
+  margin: 0 20px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 43px
+  height: 35px
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link
+  background: transparent
+  color: #222222
+
+  .nav-link__text
+    border-color: transparent
+
+.card
+  background: #FAF8F5
+  border-radius: 3px
+  border: none
+  transition: .3s ease
+  padding: 24px 20px 40px
+  font-size: 14px
+  font-family: $museo
+  margin: 0 0 48px
+
+  &:hover
+    box-shadow: 0px 8px 60px rgba(155, 146, 132, 0.35)
+
+.card__image
+  position: relative
+  width: 100%
+  height: 234px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  border-radius: 2px
+  background: #C7C7C7
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.card-area
+  border-radius: 3px
+  background: #FF4949
+  position: absolute
+  z-index: 2
+  top: 8px
+  right: 8px
+  color: #FFFFFF
+  font-size: 11px
+  font-weight: 600
+  font-family: $museo
+  width: 61px
+  height: 22px
+  display: flex
+  align-items: center
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  justify-content: center
+
+  sup
+    font-size: 9px
+
+.card__body
+  padding: 28px 0 0
+
+.card-title
+  color: #222222
+  font-size: 20px
+  font-weight: bold
+  font-family: $default-font
+
+.card-size
+  margin: 7px 0 12px
+
+.card-price
+  display: flex
+  align-items: center
+  font-size: 20px
+  line-height: 40px
+
+.icon-rub
+  font-family: $rub
+  font-size: 20px
+  margin: 0 0 -3px
+
+.card-description
+  color: #999999
+  margin: 0 0 30px
+
+.payment-options__card
+  padding: 43px 262px 43px 32px
+  position: relative
+  font-size: 14px
+  font-family: $museo
+  min-height: 264px
+  line-height: 20px
+  border-radius: 3px
+  margin: 0 0 159px
+
+.payment-options__card-title
+  font-size: 32px
+  font-weight: bold
+  margin: 0 0 17px
+  font-family: $default-font
+  line-height: 40px
+
+.payment-options__card-image
+  position: absolute
+  bottom: 0
+  right: 0
+
+.payment-options__card.bg-violet
+  color: #5B2486
+
+  .payment-options__card-text
+    opacity: .7
+
+.payment-options__card.bg-yellow
+  color: #532612
+
+  .payment-options__card-text
+    opacity: .7
+
+//.calculation
+.calculation
+  background: #FAF8F5
+  position: relative
+
+.calculation__image
+  min-width: 923px
+  float: right
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin: 0 0 -16px
+
+.calculation-time
+  background: #FEE7AD
+  width: 246px
+  height: 246px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  right: 30px
+  top: -23px
+  z-index: 1
+  text-align: center
+  padding: 0 31px
+  color: #532612
+  line-height: 24px
+  font-family: $museo
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    background: url("../img/sheet.png") no-repeat center
+      size: contain
+    z-index: 1
+
+  &:before
+    transform: rotate(102.6deg)
+    width: 79px
+    height: 48px
+    filter: blur(4px)
+    top: 14px
+    left: -11px
+    right: 19px
+
+  &:after
+    filter: blur(4px)
+    width: 157px
+    height: 95px
+    bottom: -34px
+
+  p
+    padding: 17px 0 25px
+    border:
+      top: 1px solid #DDB06C
+      bottom: 1px solid #DDB06C
+    text-align: center
+    position: relative
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      background: #DDB06C
+      top: 50%
+      transform: translate(0, -50%)
+
+    &:before
+      left: -14px
+
+    &:after
+      right: -14px
+
+.calculation__content
+  padding: 82px 0 88px 20px
+
+.calculation__description
+  color: #999999
+  font-size: 14px
+  font-family: $museo
+  margin: 34px 0 36px
+
+.form
+  .form-group
+    width: 100%
+    margin: 0 0 12px
+
+    &:last-child
+      margin: 0
+
+  label
+    width: 100%
+    position: relative
+
+  input
+    background: transparent
+    padding: 13px 0 13px 31px
+    border-bottom: 1px solid #C4C4C4
+    color: rgba(#666666, .5)
+    font-size: 14px
+    font-family: $museo
+    line-height: 20px
+
+    &::placeholder
+      color: rgba(#666666, .5)
+
+    &:hover, &:focus
+      background: transparent
+      color: #222222
+      border-color: #18BA3C
+
+      + .form-group__icon
+        fill: #18BA3C
+
+        path
+          fill: #18BA3C
+
+      &::placeholder
+        color: #222222
+
+  button
+    margin: 46px 0 0
+
+.form-group__icon
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  left: 0
+  width: 14px
+  fill: rgba(#666666, .5)
+  transition: .3s ease
+
+//company-history
+.company-history
+  padding: 120px 0
+
+  h2
+    max-width: 324px
+
+.company-history__description
+  padding: 0 0 0 40px
+  color: #666666
+  font-size: 14px
+  font-weight: 500
+  font-family: $museo
+  height: 100%
+  display: flex
+  align-items: center
+  line-height: 28px
+
+.company-history__info
+  margin: 61px 0 0 0
+  display: flex
+  align-items: stretch
+
+.company-history__image
+  width: 632px
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.company-history__box-wrap
+  width: calc(100% - 632px)
+  display: flex
+  flex-wrap: wrap
+
+.company-history__box
+  width: 50%
+  height: 172px
+  border: 1px solid rgba(#C4C4C4, .2)
+  padding: 23px 50px 23px 30px
+  line-height: 20px
+  font-size: 11px
+  font-weight: bold
+  font-family: $museo
+  color: #222222
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  margin: 0 -1px 0 0
+  border-radius: 0
+
+  .number
+    font-size: 48px
+    font-family: $default-font
+    color: #DDB06C
+    text-transform: none
+    letter-spacing: 0
+    line-height: 56px
+    font-weight: normal
+
+.btn-accent.company-history__box
+  color: #fff
+  line-height: 18px
+
+
+//advantages
+.advantages__box
+  margin: 0 0 16px
+  background: #FAF8F5
+  border-radius: 3px
+  padding: 24px 24px 20px
+  font-size: 14px
+  font-family: $museo
+  color: #999999
+  line-height: 20px
+  height: 224px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  h3
+    color: #222222
+    font-size: 11px
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    font-weight: 700
+    line-height: 20px
+    margin: 0 0 7px
+
+  p
+    margin: auto 0 0 0
+
+
+.advantages__icon
+  width: 55px
+  height: 53px
+  margin: 0 0 50px
+
+//constructed-objects
+.constructed-objects
+  padding: 102px 0 121px
+  background: #FAF8F5
+
+  .title-line
+    margin: 0 0 67px
+
+
+.constructed-objects__card
+  padding: 0
+
+  &:hover
+    box-shadow: none
+
+  .card-title
+    font-size: 20px
+
+  .card__body
+    padding: 27px 50px 0 0
+
+  .card__image
+    height: 194px
+    border-radius: 0
+
+  .card-link
+    margin: 34px 0 0
+
+.object-location, .object-date
+  color: #999999
+  font-size: 11px
+  text-transform: uppercase
+  font-weight: bold
+  font-family: $museo
+  display: flex
+  align-items: center
+
+.object-location
+  margin: 0 0 13px
+
+.object-location__icon, .object-date__icon
+  width: 21px
+  height: 21px
+  margin: 0 12px 0 0
+
+//calculation-two
+.calculation-two
+  background: url("../img/bg4.png") #FAF8F5 no-repeat center
+    size: cover
+
+//partner
+.partner
+  padding: 115px 0
+
+.partner__description
+  text-align: center
+  margin: 33px auto 50px
+  font-size: 14px
+  max-width: 760px
+  width: 100%
+  color: #666666
+  font-family: $museo
+  line-height: 20px
+
+.partner__content
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.partner__logo
+  margin: 0 0 35px
+  width: 20%
+  display: flex
+  align-items: center
+  justify-content: center
+
+//company-video
+.company-video
+  padding: 91px 0 0
+
+
+.company-video__card
+  background: #fff
+
+  &:hover
+    box-shadow: none
+
+  .card__body
+    padding: 27px 0 0 0
+
+.card-text
+  margin: 20px 0 16px
+  color: #999999
+  font-size: 14px
+  font-family: $museo
+
+
+//.company-video
+.slick-slide
+  outline: none
+
+
+.company-video__card
+  width: 349px
+  margin: 44px auto 125px
+
+.card__video
+  height: 216px
+  width: 100%
+
+  iframe
+    width: 100%
+    height: 100%
+
+.video-nav
+  margin: 0 0 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+
+.slider-nav
+  .slick-arrow
+    position: relative
+    top: 0
+    transform: translate(0)
+
+    &:hover
+      background: #18BA3C
+
+    &:focus
+      background: #fff
+
+  .slick-next
+    left: 0
+    right: 0
+
+  .slick-prev
+    right: 0
+    left: 0
+
+
+.slick-arrow
+  background: #FFFFFF
+  width: 40px
+  height: 40px
+  opacity: 1
+
+  svg
+    width: 5px
+    height: 10px
+
+    path
+      stroke: #222
+      transition: .3s ease
+
+  &:hover
+    svg
+      path
+        stroke: #fff
+
+  &:before
+    display: none
+
+
+//articles
+.articles
+  padding: 88px 0 175px
+
+  .title-line
+    margin: 0 0 59px
+
+    .links
+      margin: 0 0 10px auto
+
+.article__card
+  background: #fff
+  padding: 0
+
+  &:hover
+    box-shadow: none
+
+  .card__body
+    padding: 35px 0 0 0
+
+  .card__image
+    height: 192px
+    border-radius: 0
+
+//callback
+.callback
+  margin: 0 auto -70px
+  z-index: 2
+  position: relative
+
+  form
+    height: 100%
+    display: flex
+    align-items: center
+
+  .form-group
+    width: 234px
+    margin: 0 27px 0 0
+
+  button
+    margin: 0 0 0 33px
+
+  h2
+    font-size: 32px
+    width: auto
+    max-width: 176px
+
+.callback-content
+  padding: 45px 70px 65px 48px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+//footer
+footer
+  background: #222
+  color: #fff
+  padding: 158px 0 28px
+
+  .logo
+    color: #fff
+    align-items: flex-start
+
+  .logo__icon
+    margin: 0
+
+  .logo__text
+    margin: 0 0 0 29px
+    font-family: 'Merriweather', sans-serif
+    font-size: 17px
+
+  .logo__motto
+    padding: 0
+    margin: 12px 0 0
+    border: none
+    font-size: 14px
+    font-weight: normal
+    text-transform: none
+    opacity: 0.6
+    line-height: 20px
+    color: #fff
+
+  .footer-menu
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    flex-direction: row
+
+  .nav-links
+    color: #fff
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 11px
+
+  .nav-item
+    width: 60%
+    margin: 0 0 20px
+
+    &:nth-child(even)
+      width: 40%
+
+    &:last-child
+      margin: 0 0 15px
+
+  .list-group
+    padding: 0 0 0 50px
+
+    .list-group-item
+      color: #fff
+      font-size: 11px
+
+    .list-group-item__text
+      border-color: #fff
+
+  .phone
+    color: #fff
+
+  .box-phone
+    text-align: right
+    margin: 0 0 8px
+
+  .mail
+    text-align: right
+    color: #fff
+    border-bottom: 1px dashed #fff
+    display: inline-flex
+    margin: 0 0 0 auto
+
+  .box-contacts
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin: 0
+
+  .list-social
+    justify-content: flex-end
+
+.links-doc
+  color: #999999
+  font-size: 12px
+  font-family: $museo
+  margin: 19px 0 0
+
+.copyright
+  text-align: right
+  color: #999999
+  font-size: 12px
+  font-family: $museo
+  margin: 19px 0 0
+
+.address
+  width: 100%
+  margin: 15px 0 21px auto
+  color: #999999
+  font-size: 12px
+  max-width: 160px
+  text-align: right
+  font-family: $museo
+
+.scroll-top
+  display: inline-flex
+  align-items: center
+  color: #18BA3C
+  font-size: 12px
+  font-family: $museo
+
+  &:hover
+    color: #fff
+
+.scroll-top__icon
+  width: 5px
+  height: 10px
+  margin: 0 0 0 10px
+
+//page catalog
+.content
+  padding: 37px 0 0
+
+.breadcrumb
+  padding: 0
+  background: transparent
+  margin: 0 0 14px
+  font-family: $museo
+
+.breadcrumb-item
+  display: flex
+  align-items: center
+
+  a
+    padding: 5px 13px 6px
+    color: #999999
+    font-size: 14px
+    font-weight: normal
+    background: #F7F7F7
+    line-height: 24px
+
+.breadcrumb-item + .breadcrumb-item
+  padding: 0
+
+.breadcrumb-item + .breadcrumb-item::before
+  content: '>'
+  font-size: 14px
+  font-family: $museo
+  padding: 0
+  color: #999999
+  margin: 0 9px
+
+.breadcrumb-item.active
+  color: #222222
+
+  &:before
+    margin: 0 23px 0 9px
+
+
+//sidebar
+.sidebar
+  max-width: 240px
+  width: 100%
+
+
+.filter-wrapper
+  border: 1px solid #ECECEC
+    radius: 3px
+  background: #FAF8F5
+  padding: 47px 0 0
+
+  h3
+    padding: 0 30px
+    font-size: 20px
+    font-weight: bold
+    color: #222222
+    font-family: $default-font
+
+.technology-wrapper
+  padding: 0 30px
+  font-family: $museo
+  margin: 22px 0 0
+
+  h4
+    width: 100%
+    margin: 0 0 15px
+    text-transform: uppercase
+    font-size: 11px
+    font-weight: 600
+    color: #222222
+
+  .nav-link
+    font-size: 14px
+    line-height: 20px
+    text-transform: none
+    border: none
+    font-weight: normal
+    align-items: flex-start
+    color: #666666
+    padding: 0
+    margin: 0 0 15px
+    cursor: pointer
+
+    &:hover
+      border: none
+      color: #18BA3C
+
+  .nav-link__text
+    border: none
+
+  .nav-link__icon
+    margin: 0 16px 0 0
+    width: 23px
+    height: 18px
+
+  .nav-link.active
+    color: #18BA3C
+
+
+.btn-group
+  display: flex
+  flex-direction: column
+  align-items: center
+  border-radius: 0
+  margin: 24px 0 0
+
+  .btn
+    margin: 0 0 10px
+    width: 100%
+    border-radius: 3px
+
+    &:not(:first-child)
+      margin: 0
+      border-radius: 3px
+
+    &:not(:last-child):not(.dropdown-toggle)
+      border-radius: 3px
+
+  .card-link
+    border-radius: 3px
+
+.accordion
+  .card
+    border:
+      top: 1px solid #ECECEC
+      radius: 0
+    background: transparent
+    padding: 7px 24px 8px 30px
+    margin: 0
+
+    &:hover
+      box-shadow: none
+
+    &:not(:last-of-type)
+      border:
+        top: 1px solid #ECECEC
+
+  .card-body
+    padding: 0
+
+  .card-header
+    border: none
+    background: transparent
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 14px
+
+    button
+      height: auto
+      margin: 0
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      border: none
+      text-decoration: none
+      color: #222222
+      font-weight: 600
+      text-transform: uppercase
+      font-size: 11px
+      line-height: 40px
+
+      &:hover, &:focus
+
+        text-decoration: none
+
+    .icon-arrow
+      fill: none
+      width: 8px
+      height: 4px
+      transform: rotate(180deg)
+      transition: .3s ease
+      stroke: #999
+
+      path
+        stroke: #999
+
+    .collapsed
+      .icon-arrow
+        transform: rotate(0)
+
+//ползунок цен
+.inp-group
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  input
+    background: transparent
+    width: 50%
+    padding: 0
+    font-size: 14px
+    color: #222222
+    line-height: 24px
+    font-family: 'Open Sans', sans-serif
+
+    &:last-child
+      text-align: right
+
+
+.slider-range
+  height: 2px
+  background: #EBEBEB
+  position: relative
+  margin: 16px 0
+
+.ui-slider-horizontal .ui-slider-handle
+  width: 14px
+  height: 14px
+  box-sizing: border-box
+  background: #fff
+  display: inline-block
+  position: absolute
+  outline: none
+  top: -7px
+  cursor: pointer
+  border: 2px solid #18BA3C
+    radius: 50%
+  box-shadow: 0 2px 3px rgba(34, 34, 34, 0.12)
+
+.ui-slider .ui-slider-range
+  background: #18BA3C
+  height: 2px
+  top: -1px
+
+//sorting-wrapper
+.sorting-wrapper
+  margin: 30px 0 28px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  font-family: $museo
+
+  p
+    color: #222222
+    font-size: 14px
+    line-height: 24px
+    margin: 0 15px 0 0
+
+  .list-group
+    display: flex
+    align-items: center
+    flex-direction: row
+
+  .icon-arrow
+    fill: none
+    width: 8px
+    height: 4px
+    transition: .3s ease
+    margin: 0 4px 0 0
+    stroke: #999
+
+    path
+      stroke: #999
+
+  .item-links
+    margin: 0 12px 0 0
+    color: #222222
+    font-size: 14px
+
+    &:last-child
+      margin: 0
+
+  .active
+    color: #18BA3C
+
+    .icon-arrow
+      transform: rotate(180deg)
+      stroke: #18BA3C
+
+      path
+        stroke: #18BA3C
+
+
+.sorting, .conclusion
+  display: flex
+  align-items: center
+
+.conclusion
+  .item-links
+    border-radius: 3px
+    width: 32px
+    height: 32px
+    border: 1px solid #ECECEC
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 4px 0 0
+
+    &:last-child
+      margin: 0
+
+  .active
+    background: #18BA3C
+    border-color: #18BA3C
+    color: #fff
+
+.card-catalog
+  margin: 0 0 24px
+
+  .card__image
+    height: 178px
+
+.pagination
+  border-radius: 0
+  margin: 60px 0 96px
+
+  .page-link
+    text-transform: uppercase
+    color: #222222
+    letter-spacing: 0.1em
+    font-weight: bold
+    font-size: 11px
+    font-family: $museo
+    padding: 16px 19px
+
+    &:hover, &:focus
+      box-shadow: none
+
+.page-item.disabled .page-link
+  color: #999999
+
+.page-item.active .page-link
+  background: #18BA3C
+  border-color: #18BA3C
+
+
+//variable-house__content
+.variable-house__content
+  border: 1px solid #ECECEC
+  padding: 48px 47px 65px
+
+  h2
+    margin: 0 0 30px
+
+.variable-house__list
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.variable-house__list--item
+  width: 16.6%
+  margin: 0 0 8px
+
+.variable-house__list--links
+  color: #18BA3C
+  font-size: 14px
+  line-height: 24px
+
+  &:hover
+    color: #000
+
+
+//advantages-house
+.advantages-house
+  padding: 75px 0 50px
+
+  h2
+    margin: 0 0 48px
+
+.advantages-house__box
+  display: flex
+  align-items: flex-start
+  margin: 0 0 38px
+  color: #666666
+  font-size: 14px
+  line-height: 24px
+  font-family: $museo
+
+  h3
+    color: #222222
+    font-size: 20px
+    font-weight: bold
+    margin: 0 0 20px
+    font-family: $default-font
+
+.advantages-house__icon
+  fill: none
+  width: 16px
+  min-width: 16px
+  height: 16px
+  border-radius: 50%
+  background: #18BA3C
+  padding: 3px
+  margin: 5px 38px 0 0
+
+//seo-section
+.seo-section
+  padding: 81px 0 150px
+
+.seo-section__content
+  margin: 36px 0 0
+  font-size: 14px
+  color: #666666
+  font-family: $museo
+  line-height: 24px
+
+
+//table
+.table-head
+  width: 100%
+  background: #FAF8F5
+  padding: 26px 30px 22px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  text-transform: uppercase
+  color: #222222
+  font-size: 11px
+  font-weight: bold
+  border:
+    top: 1px solid #ECECEC
+    bottom: 1px solid #ECECEC
+
+.table__house-parameters
+  font-size: 14px
+  font-family: $museo
+  color: #666666
+
+  .table-item
+    width: 25%
+
+    &:first-child
+      width: 45%
+
+    &:nth-child(2)
+      width: 30%
+
+
+.table-body
+  line-height: 24px
+
+  .line
+    padding: 19px 30px
+    width: 100%
+    display: flex
+    align-items: flex-start
+    border:
+      bottom: 1px solid #ECECEC
+
+  h3
+    color: #222222
+    font-size: 20px
+    font-family: $default-font
+    font-weight: bold
+
+//product
+.product-image__wrap
+  position: relative
+  height: 576px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.product-image__min
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: absolute
+  z-index: 1
+  top: 16px
+  left: 16px
+
+  .item
+    width: 73px
+    height: 63px
+    margin: 0 0 8px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    cursor: pointer
+    transition: .3s ease
+    border: 2px solid transparent
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .click-item
+    border: 2px solid #FEE7AD
+
+.product-image__max
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  a
+    width: 100%
+    height: 100%
+
+.icon-search-plus
+  position: absolute
+  right: 0
+  top: 0
+  z-index: 1
+  background: #FEE7AD
+  width: 40px
+  height: 40px
+  padding: 10px
+
+.product-characteristics
+  h3
+    color: #222222
+    font-size: 32px
+    font-weight: bold
+    line-height: 40px
+  .btn-group
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    .btn
+      width: 100%
+      max-width: 159px
+      &:not(:last-child):not(.dropdown-toggle)
+        margin: 0
+
+
+.information-size
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 32px 0 5px
+
+.information-size__box
+  width: 47%
+  display: flex
+  align-items: flex-start
+  color: #666666
+  font-size: 14px
+  font-family: $museo
+  margin: 0 0 26px
+
+  p
+    color: #222222
+    font-size: 20px
+
+
+.information-size__icon
+  fill: none
+  min-width: 27px
+  width: 27px
+  height: 26px
+  margin: 0 18px 0 0
+
+.product-price
+  width: 100%
+  padding: 15px 0 19px
+  border:
+    top: 1px solid #ECECEC
+    bottom: 1px solid #ECECEC
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+  p
+    width: 100%
+    margin: 0 0 5px
+
+  .price
+    color: #222222
+    font-size: 32px
+    font-family: $museo
+    display: flex
+    align-items: center
+
+    .icon-rub
+      font-size: 32px
+
+.links-print
+  display: flex
+  align-items: center
+  text-transform: uppercase
+  font-weight: 600
+  font-family: $museo
+  color: #222222
+  font-size: 11px
+
+.links-print__text
+  border-bottom: 1px dashed #222
+
+.links-print__icon
+  width: 22px
+  height: 22px
+  margin: 0 10px 0 0
+
+.payment-options
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.payment-options__box
+  display: flex
+  align-items: center
+  margin: 38px 0 36px
+  font-size: 11px
+  text-transform: uppercase
+  font-family: $museo
+  line-height: 16px
+  font-weight: 600
+
+
+.payment-options__icon
+  margin: 0 13px  0 0
+  width: 21px
+  height: 22px
+
+.payment-options__text
+  max-width: 88px
+  border-bottom: 1px dashed #222
+
+.variable
+  margin: 30px 0 0
+
+.variable-item
+  display: flex
+  align-items: center
+  margin: 0 0 14px
+  color: #666666
+  font-size: 14px
+  font-family: $museo
+
+.variable-item__icon
+  width: 22px
+  height: 18px
+  fill: none
+  margin: 0 30px 0 0
+
+//details-information
+.details-information
+  margin: 89px 0 108px
+  padding: 0 0 88px
+
+.details-information__nav-pills
+  justify-content: flex-start
+  border-bottom: 1px solid #ECECEC
+  margin: 0 0 90px
+  .nav-item
+    margin: 0 0 -3px
+  .nav-link
+    border-bottom: 4px solid transparent
+    padding: 30px 60px 29px
+  .nav-link.active
+    border-color: #18BA3C
+
+.plans-wrapper
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.plan-box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: 0 150px 0 0
+  color: #666666
+  font-size: 14px
+  font-family: $museo
+  p
+    font-size: 20px
+    color: #222
+  &:last-child
+    margin: 0
+    .image-plan
+      max-width: 308px
+
+.image-plan
+  max-width: 398px
+  mix-blend-mode: darken
+  height: 358px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 30px
+
+.details-information__tabs-content
+  .btn-group
+    margin: 70px 0 0
+    flex-direction: row
+    align-items: center
+    .btn
+      width: 247px
+      max-width: 247px
+      margin: 0 16px 0 0
+      &:not(:last-child):not(.dropdown-toggle)
+        margin: 0 16px 0 0
+
+//composition-production
+.composition-production
+  padding: 0 0 62px
+
+.composition-production__nav-pills
+  justify-content: space-between
+  border-bottom: 1px solid #ECECEC
+  margin: 0 0 87px
+  .nav-item
+    width: 16.6%
+    margin: 0 0 -4px
+  .nav-link
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 0 30px
+    border-bottom: 4px solid transparent
+
+  .nav-link.active
+    border-color: #18BA3C
+  .tab-icon
+    fill: none
+    width: 82px
+    height: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 50px
+
+.composition-production__accordion
+  //display: flex
+  //align-items: flex-start
+  //justify-content: space-between
+  //flex-wrap: wrap
+  //align-content: flex-start
+  .card
+    border: 1px solid #ECECEC
+      radius: 3px
+    background: #FAF8F5
+    margin: 0 0 16px
+    padding: 0
+    align-self: flex-start
+    &:not(:last-of-type)
+      border: 1px solid #ECECEC
+        radius: 3px
+    &:not(:first-of-type)
+      border-radius: 3px
+  .card-header
+
+    padding: 0
+    margin: 0
+    .text
+      border-bottom: 1px dashed #222
+    button
+      line-height: normal
+      padding: 24px 24px 25px 27px
+  .card-body
+    padding: 16px 29px 45px
+    color: #666666
+    font-size: 14px
+    margin: 0
+    border-top: 1px solid #ECECEC
+
+.list-dots__item
+  margin: 0 0 20px
+  position: relative
+  padding: 0 0 0 26px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    width: 3px
+    height: 3px
+    border-radius: 50%
+    background: #18BA3C
+  &:last-child
+    margin: 0
+
+
+//recommended
+.recommended
+  margin: 70px 0 231px
+  h2
+    margin: 0 auto 70px
+
+
+//calc
+.calc
+  padding: 72px 0 90px
+  
+.calc__description
+  text-align: center
+  margin: 8px 0 44px
+
+.form-calc
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: center
+  .form-group
+    width: 298px
+    margin: 0 38px 0 0
+  button
+    margin: 0 0 0 8px
+
+
+
+
+@import "media"
+// Всегда в конце
