@@ -4,7 +4,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+  .information-size__box p
+    font-size: 16px
 
 
 /* Medium Devices, Desktops */
@@ -175,12 +176,38 @@
   .seo-section
     padding: 70px 0 100px
 
+  .product-characteristics .btn-group, .payment-options, .product-price
+    justify-content: space-around
+
+  .product-characteristics
+    margin: 40px 0 0 0
+
+  .composition-production__nav-pills
+    .nav-link
+      padding: 15px 0 10px
+      text-align: center
+    .nav-item
+      margin: 0
+
+
 @media only screen and (max-width : 930px)
   .payment-options__card-image
     width: 220px
 
+  .image-plan, .plan-box:last-child .image-plan
+    max-width: 250px
+    height: 280px
+
+  .details-information__nav-pills
+    margin: 0 0 40px
+
   .payment-options__card
     padding: 30px 220px 30px 32px
+
+  .details-information__nav-pills .nav-link
+    padding: 20px 10px
+
+
 
 @media only screen and (max-width : 900px)
   .nav-item
@@ -332,7 +359,67 @@
   .table-body h3
     font-size: 16px
 
-/* Custom, iPhone Retina */
+  .plans-wrapper
+    flex-direction: column
+    align-items: center
+
+  .image-plan, .plan-box:last-child .image-plan
+    height: auto
+
+  .plan-box
+    margin: 0 auto 20px
+
+  .details-information__tabs-content .btn-group
+    flex-direction: column
+    align-items: center
+    margin: 40px 0 0
+    .btn
+      margin: 0 auto 20px
+
+
+  .details-information__tabs-content .btn-group .btn:not(:last-child):not(.dropdown-toggle)
+    margin: 0 auto 20px
+
+  .details-information
+    padding: 0 0 40px
+    margin: 60px 0 70px
+
+  .details-information__nav-pills .nav-item
+    margin: 0
+
+  .composition-production__nav-pills
+    border: none
+    justify-content: space-around
+
+  .composition-production__nav-pills .tab-icon
+    width: 62px
+    height: 60px
+    margin: 0 0 30px
+
+  .composition-production__nav-pills .nav-item
+    margin: 0
+    width: 33%
+
+  .calc__description
+    font-size: 14px
+    margin: 20px auto 30px
+
+  .calc
+    padding: 40px 0 60px
+
+  .recommended h2
+    margin: 0 auto 40px
+
+  .recommended
+    margin: 50px 0 90px
+
+
+
+@media only screen and (max-width : 720px)
+  .form-calc .form-group
+    width: 100%
+    margin: 0 0 15px
+
 @media only screen and (max-width : 575px)
   .phone
     font-size: 14px
@@ -426,6 +513,10 @@
         width: 35%
       &:last-child
         width: 30%
+
+  .product-image__wrap
+    height: 400px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 440px)
@@ -543,3 +634,30 @@
 
   .advantages-house__icon
     margin: 5px 10px 0 0
+
+  .product-image__wrap
+    height: 300px
+
+  .product-price .price
+    font-size: 26px
+    .icon-rub
+      font-size: 26px
+
+  .payment-options__box
+    width: 100%
+    margin: 10px 0 0
+    justify-content: flex-start
+    text-align: left
+
+  .payment-options__text
+    max-width: none
+    text-align: left
+
+  .payment-options
+    justify-content: flex-start
+
+  .product-characteristics h3
+    font-size: 24px
+
+  .composition-production__accordion .card-body
+    font-size: 12px
