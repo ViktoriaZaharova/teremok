@@ -180,11 +180,13 @@ h2
   width: 100%
   font-size: 48px
   font-weight: bold
+  .color-accent
+    line-height: 42px
 
 .title-page
   font-size: 48px
   line-height: 64px
-  margin: 0 0 42px
+  margin: 0 0 30px
   max-width: none
   width: 100%
 
@@ -206,7 +208,7 @@ h2
 .links-title
   color: #18BA3C
   font-size: 48px
-  line-height: 56px
+  line-height: 43px
   font-weight: bold
 
   display: inline-block
@@ -224,8 +226,8 @@ h2
     line-height: 56px
 
   .links-title
-    padding: 0 0 0 30px
-    margin: 0 0 0 30px
+    padding: 0 0 0 38px
+    margin: 0 0 0 41px
     position: relative
 
     &:before
@@ -233,7 +235,7 @@ h2
       position: absolute
       left: 0
       top: 50%
-      transform: translate(0, -50%) rotate(30deg)
+      transform: translate(0, -50%) rotate(26deg)
       width: 1px
       height: 100%
       background: #000
@@ -251,9 +253,14 @@ h2
   max-width: 1120px
 
 //header
+header
+  .list-group
+    margin: 4px 0 0 0
+
 .header-top
   padding: 40px 0
   border-bottom: 1px solid #E2E2E2
+
 
 .header-bottom
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09)
@@ -289,7 +296,7 @@ span
   padding: 0 0 0 26px
   max-width: 140px
   width: 100%
-  line-height: 24px
+  line-height: 20px
   margin: 0 0 0 24px
   font-family: $museo
   border:
@@ -329,7 +336,7 @@ span
     bottom: 1px dashed #222222
 
 .box-contacts
-  margin: 0 0 0 86px
+  margin: 2px 0 0 100px
   font-family: $museo
   font-size: 14px
   display: flex
@@ -391,6 +398,12 @@ span
 .navbar-expand-md .navbar-nav .nav-link
   padding: 13px 18px 18px
 
+.navbar-nav
+  .nav-item
+    &:first-child
+      margin: 0 56px 0 0
+      .nav-link
+        padding: 13px 0 18px 2px
 
 .nav-link
   display: flex
@@ -416,10 +429,10 @@ span
   right: 0
   color: #999999
   font-size: 9px
-  bottom: 30px
+  bottom: 27px
 
 .nav-item
-  margin: 0 46px 0 0
+  margin: 0 34px 0 0
 
   &:last-child
     margin: 0
@@ -467,7 +480,7 @@ main
 .main-price
   display: flex
   align-items: center
-  margin: 56px 0 38px
+  margin: 32px 0 38px
   font-family: $museo
 
 .main-price__icon
@@ -484,7 +497,7 @@ main
     width: 237px
 
   h2
-    margin: 0 0 64px
+    margin: 0 0 57px
 
 .catalog__bg
   .img
@@ -515,8 +528,9 @@ main
   margin: 0 0 55px
 
   .nav-item
-    margin: 0 48px 0 0
-
+    margin: 0 63px 0 0
+    &:last-child
+      margin: 0
   .nav-link
     border: none
       radius: 0
@@ -601,7 +615,7 @@ main
     font-size: 9px
 
 .card__body
-  padding: 28px 0 0
+  padding: 36px 0 0
 
 .card-title
   color: #222222
@@ -616,7 +630,7 @@ main
   display: flex
   align-items: center
   font-size: 20px
-  line-height: 40px
+  line-height: 37px
 
 .icon-rub
   font-family: $rub
@@ -625,10 +639,10 @@ main
 
 .card-description
   color: #999999
-  margin: 0 0 30px
+  margin: 0 0 28px
 
 .payment-options__card
-  padding: 43px 262px 43px 32px
+  padding: 43px 256px 43px 32px
   position: relative
   font-size: 14px
   font-family: $museo
@@ -640,7 +654,7 @@ main
 .payment-options__card-title
   font-size: 32px
   font-weight: bold
-  margin: 0 0 17px
+  margin: 0 0 7px
   font-family: $default-font
   line-height: 40px
 
@@ -659,6 +673,7 @@ main
   color: #532612
 
   .payment-options__card-text
+    max-width: 179px
     opacity: .7
 
 //.calculation
@@ -674,6 +689,8 @@ main
   align-items: center
   justify-content: flex-end
   margin: 0 0 -16px
+  img
+    margin: 0px 45px -80px 0px
 
 .calculation-time
   background: #FEE7AD
@@ -684,7 +701,7 @@ main
   align-items: center
   justify-content: center
   position: absolute
-  right: 30px
+  right: 80px
   top: -23px
   z-index: 1
   text-align: center
@@ -740,13 +757,13 @@ main
       right: -14px
 
 .calculation__content
-  padding: 82px 0 88px 20px
+  padding: 77px 0 88px 44px
 
 .calculation__description
   color: #999999
   font-size: 14px
   font-family: $museo
-  margin: 34px 0 36px
+  margin: 30px 0 27px
 
 .form
   .form-group
@@ -800,24 +817,24 @@ main
 
 //company-history
 .company-history
-  padding: 120px 0
+  padding: 116px 0 131px
 
   h2
     max-width: 324px
 
 .company-history__description
-  padding: 0 0 0 40px
+  padding: 6px 0 0
   color: #666666
   font-size: 14px
   font-weight: 500
   font-family: $museo
   height: 100%
   display: flex
-  align-items: center
-  line-height: 28px
+  align-items: flex-start
+  line-height: 30px
 
 .company-history__info
-  margin: 61px 0 0 0
+  margin: 70px 0 0 0
   display: flex
   align-items: stretch
 
@@ -839,10 +856,10 @@ main
   flex-wrap: wrap
 
 .company-history__box
-  width: 50%
+  width: 48%
   height: 172px
   border: 1px solid rgba(#C4C4C4, .2)
-  padding: 23px 50px 23px 30px
+  padding: 19px 50px 23px 22px
   line-height: 20px
   font-size: 11px
   font-weight: bold
@@ -861,6 +878,7 @@ main
     letter-spacing: 0
     line-height: 56px
     font-weight: normal
+    margin: 0 0 7px
 
 .btn-accent.company-history__box
   color: #fff
@@ -873,7 +891,7 @@ main
   margin: 0 0 16px
   background: #FAF8F5
   border-radius: 3px
-  padding: 24px 24px 20px
+  padding: 24px 24px 20px 33px
   font-size: 14px
   font-family: $museo
   color: #999999
@@ -890,7 +908,7 @@ main
     letter-spacing: 0.1em
     font-weight: 700
     line-height: 20px
-    margin: 0 0 7px
+    margin: 0 0 3px
 
   p
     margin: auto 0 0 0
@@ -899,12 +917,13 @@ main
 .advantages__icon
   width: 55px
   height: 53px
-  margin: 0 0 50px
+  margin: 0 0 53px
 
 //constructed-objects
 .constructed-objects
-  padding: 102px 0 121px
+  padding: 102px 0 73px
   background: #FAF8F5
+  margin: 100px 0 0
 
   .title-line
     margin: 0 0 67px
@@ -918,9 +937,11 @@ main
 
   .card-title
     font-size: 20px
+    line-height: 26px
+    margin: 0 0 20px
 
   .card__body
-    padding: 27px 50px 0 0
+    padding: 32px 50px 0 0
 
   .card__image
     height: 194px
@@ -950,10 +971,12 @@ main
 .calculation-two
   background: url("../img/bg4.png") #FAF8F5 no-repeat center
     size: cover
+  .calculation__content
+    padding: 87px 0 101px 44px
 
 //partner
 .partner
-  padding: 115px 0
+  padding: 115px 0 100px
 
 .partner__description
   text-align: center
@@ -986,18 +1009,22 @@ main
 
 .company-video__card
   background: #fff
-
+  width: 349px
+  margin: 44px auto 129px
   &:hover
     box-shadow: none
 
   .card__body
-    padding: 27px 0 0 0
+    padding: 27px 21px 0 0
+  .card-title
+    line-height: 27px
 
 .card-text
-  margin: 20px 0 16px
+  margin: 25px 0 27px
   color: #999999
   font-size: 14px
   font-family: $museo
+  line-height: 20px
 
 
 //.company-video
@@ -1005,9 +1032,6 @@ main
   outline: none
 
 
-.company-video__card
-  width: 349px
-  margin: 44px auto 125px
 
 .card__video
   height: 216px
@@ -1026,7 +1050,7 @@ main
 .slider-nav
   .slick-arrow
     position: relative
-    top: 0
+    top: -6px
     transform: translate(0)
 
     &:hover
@@ -1069,13 +1093,13 @@ main
 
 //articles
 .articles
-  padding: 88px 0 175px
+  padding: 88px 0 128px
 
   .title-line
     margin: 0 0 59px
 
     .links
-      margin: 0 0 10px auto
+      margin: auto 0 3px auto
 
 .article__card
   background: #fff
@@ -1090,10 +1114,12 @@ main
   .card__image
     height: 192px
     border-radius: 0
+  .card-title
+    line-height: 28px
 
 //callback
 .callback
-  margin: 0 auto -70px
+  margin: 0 auto -74px
   z-index: 2
   position: relative
 
@@ -1115,7 +1141,7 @@ main
     max-width: 176px
 
 .callback-content
-  padding: 45px 70px 65px 48px
+  padding: 45px 70px 61px 48px
   display: flex
   align-items: center
   justify-content: space-between
@@ -1124,8 +1150,9 @@ main
 footer
   background: #222
   color: #fff
-  padding: 158px 0 28px
-
+  padding: 132px 0 30px
+  .phone
+    line-height: 26px
   .logo
     color: #fff
     align-items: flex-start
@@ -1140,13 +1167,13 @@ footer
 
   .logo__motto
     padding: 0
-    margin: 12px 0 0
+    margin: 9px 0 0
     border: none
     font-size: 14px
     font-weight: normal
     text-transform: none
     opacity: 0.6
-    line-height: 20px
+    line-height: 18px
     color: #fff
 
   .footer-menu
@@ -1154,25 +1181,28 @@ footer
     align-items: center
     flex-wrap: wrap
     flex-direction: row
+    padding: 7px 0 0 0
+  .navbar-nav
+    .nav-links
+      color: #fff
+      text-transform: uppercase
+      font-weight: 600
+      font-size: 11px
 
-  .nav-links
-    color: #fff
-    text-transform: uppercase
-    font-weight: 600
-    font-size: 11px
+    .nav-item
+      width: 60%
+      margin: 0 0 20px
 
-  .nav-item
-    width: 60%
-    margin: 0 0 20px
-
-    &:nth-child(even)
-      width: 40%
-
-    &:last-child
-      margin: 0 0 15px
+      &:nth-child(even)
+        width: 29%
+        margin: 0 0 20px auto
+      &:last-child
+        margin: 0 0 20px auto
+      &:first-child
+        margin: 0 0 20px
 
   .list-group
-    padding: 0 0 0 50px
+    padding: 0 0 0 70px
 
     .list-group-item
       color: #fff
@@ -1219,7 +1249,7 @@ footer
 
 .address
   width: 100%
-  margin: 15px 0 21px auto
+  margin: 20px 0 23px auto
   color: #999999
   font-size: 12px
   max-width: 160px
@@ -1243,7 +1273,7 @@ footer
 
 //page catalog
 .content
-  padding: 37px 0 0
+  padding: 32px 0 0
 
 .breadcrumb
   padding: 0
@@ -1292,7 +1322,7 @@ footer
   border: 1px solid #ECECEC
     radius: 3px
   background: #FAF8F5
-  padding: 47px 0 0
+  padding: 50px 0 0
 
   h3
     padding: 0 30px
@@ -1304,7 +1334,7 @@ footer
 .technology-wrapper
   padding: 0 30px
   font-family: $museo
-  margin: 22px 0 0
+  margin: 41px 0 32px
 
   h4
     width: 100%
@@ -1316,7 +1346,7 @@ footer
 
   .nav-link
     font-size: 14px
-    line-height: 20px
+    line-height: 23px
     text-transform: none
     border: none
     font-weight: normal
@@ -1381,7 +1411,7 @@ footer
         top: 1px solid #ECECEC
 
   .card-body
-    padding: 0
+    padding: 0 0 7px
 
   .card-header
     border: none
@@ -1472,7 +1502,7 @@ footer
 
 //sorting-wrapper
 .sorting-wrapper
-  margin: 30px 0 28px
+  margin: 27px 0 16px
   width: 100%
   display: flex
   align-items: center
@@ -1484,7 +1514,7 @@ footer
     color: #222222
     font-size: 14px
     line-height: 24px
-    margin: 0 15px 0 0
+    margin: 0 17px 0 0
 
   .list-group
     display: flex
@@ -1496,7 +1526,7 @@ footer
     width: 8px
     height: 4px
     transition: .3s ease
-    margin: 0 4px 0 0
+    margin: 0 1px 0 7px
     stroke: #999
 
     path
@@ -1526,6 +1556,8 @@ footer
   align-items: center
 
 .conclusion
+  p
+    margin: 0 16px 0 0
   .item-links
     border-radius: 3px
     width: 32px
@@ -1534,7 +1566,7 @@ footer
     display: flex
     align-items: center
     justify-content: center
-    margin: 0 4px 0 0
+    margin: 0 8px 0 0
 
     &:last-child
       margin: 0
@@ -1545,14 +1577,19 @@ footer
     color: #fff
 
 .card-catalog
-  margin: 0 0 24px
-
+  margin: 0 0 16px
+  padding: 28px 14px 40px 16px
   .card__image
     height: 178px
+  .card-title
+    line-height: 28px
+  .card-description
+    margin: 0 0 23px
+
 
 .pagination
   border-radius: 0
-  margin: 60px 0 96px
+  margin: 73px 0 96px
 
   .page-link
     text-transform: uppercase
@@ -1577,7 +1614,7 @@ footer
 //variable-house__content
 .variable-house__content
   border: 1px solid #ECECEC
-  padding: 48px 47px 65px
+  padding: 42px 47px 62px
 
   h2
     margin: 0 0 30px
@@ -1602,15 +1639,15 @@ footer
 
 //advantages-house
 .advantages-house
-  padding: 75px 0 50px
+  padding: 69px 0 50px
 
   h2
-    margin: 0 0 48px
+    margin: 0 0 55px
 
 .advantages-house__box
   display: flex
   align-items: flex-start
-  margin: 0 0 38px
+  margin: 0 0 27px
   color: #666666
   font-size: 14px
   line-height: 24px
@@ -1620,7 +1657,7 @@ footer
     color: #222222
     font-size: 20px
     font-weight: bold
-    margin: 0 0 20px
+    margin: 0 0 13px
     font-family: $default-font
 
 .advantages-house__icon
@@ -1635,10 +1672,10 @@ footer
 
 //seo-section
 .seo-section
-  padding: 81px 0 150px
+  padding: 75px 0 153px
 
 .seo-section__content
-  margin: 36px 0 0
+  margin: 30px 0 0
   font-size: 14px
   color: #666666
   font-family: $museo
@@ -1649,11 +1686,12 @@ footer
 .table-head
   width: 100%
   background: #FAF8F5
-  padding: 26px 30px 22px
+  padding: 31px 30px 22px
   display: flex
   align-items: center
   flex-wrap: wrap
   text-transform: uppercase
+  letter-spacing: 0.1em
   color: #222222
   font-size: 11px
   font-weight: bold
@@ -1667,17 +1705,17 @@ footer
   color: #666666
 
   .table-item
-    width: 25%
+    width: 24%
 
     &:first-child
-      width: 45%
+      width: 47%
 
     &:nth-child(2)
-      width: 30%
+      width: 27%
 
 
 .table-body
-  line-height: 24px
+  line-height: 27px
 
   .line
     padding: 19px 30px
@@ -1700,6 +1738,7 @@ footer
   display: flex
   align-items: center
   justify-content: center
+  max-width: 680px
 
 .product-image__min
   display: flex
@@ -1761,12 +1800,13 @@ footer
     color: #222222
     font-size: 32px
     font-weight: bold
-    line-height: 40px
+    line-height: 26px
   .btn-group
     flex-direction: row
     align-items: center
     justify-content: space-between
     width: 100%
+    margin: 6px 0 0
     .btn
       width: 100%
       max-width: 159px
@@ -1779,7 +1819,7 @@ footer
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  margin: 32px 0 5px
+  margin: 35px 0 5px
 
 .information-size__box
   width: 47%
@@ -1800,11 +1840,14 @@ footer
   min-width: 27px
   width: 27px
   height: 26px
-  margin: 0 18px 0 0
+  margin: 0 12px 0 0
+
+.information-size__content
+  line-height: 24px
 
 .product-price
   width: 100%
-  padding: 15px 0 19px
+  padding: 19px 0 16px
   border:
     top: 1px solid #ECECEC
     bottom: 1px solid #ECECEC
@@ -1834,6 +1877,7 @@ footer
   font-family: $museo
   color: #222222
   font-size: 11px
+  margin: 0 28px -13px 0
 
 .links-print__text
   border-bottom: 1px dashed #222
@@ -1871,7 +1915,7 @@ footer
   border-bottom: 1px dashed #222
 
 .variable
-  margin: 30px 0 0
+  margin: 53px 0 0
 
 .variable-item
   display: flex
@@ -1889,18 +1933,19 @@ footer
 
 //details-information
 .details-information
-  margin: 89px 0 108px
+  margin: 77px 0 108px
   padding: 0 0 88px
 
 .details-information__nav-pills
   justify-content: flex-start
   border-bottom: 1px solid #ECECEC
-  margin: 0 0 90px
+  margin: 0 0 60px
   .nav-item
     margin: 0 0 -3px
   .nav-link
     border-bottom: 4px solid transparent
-    padding: 30px 60px 29px
+    padding: 39px 54px 29px
+    letter-spacing: 0.1em
   .nav-link.active
     border-color: #18BA3C
 
@@ -1932,11 +1977,11 @@ footer
   display: flex
   align-items: center
   justify-content: center
-  margin: 0 0 30px
+  margin: 0 0 37px
 
 .details-information__tabs-content
   .btn-group
-    margin: 70px 0 0
+    margin: 74px 0 0
     flex-direction: row
     align-items: center
     .btn
@@ -1948,22 +1993,22 @@ footer
 
 //composition-production
 .composition-production
-  padding: 0 0 62px
+  padding: 0 0 72px
 
 .composition-production__nav-pills
   justify-content: space-between
   border-bottom: 1px solid #ECECEC
   margin: 0 0 87px
   .nav-item
-    width: 16.6%
     margin: 0 0 -4px
   .nav-link
     display: flex
     flex-direction: column
     align-items: center
-    padding: 0 0 30px
+    padding: 0 30px 12px
     border-bottom: 4px solid transparent
-
+    text-align: center
+    line-height: 15px
   .nav-link.active
     border-color: #18BA3C
   .tab-icon
@@ -1976,11 +2021,6 @@ footer
     margin: 0 auto 50px
 
 .composition-production__accordion
-  //display: flex
-  //align-items: flex-start
-  //justify-content: space-between
-  //flex-wrap: wrap
-  //align-content: flex-start
   .card
     border: 1px solid #ECECEC
       radius: 3px
@@ -2003,14 +2043,14 @@ footer
       line-height: normal
       padding: 24px 24px 25px 27px
   .card-body
-    padding: 16px 29px 45px
+    padding: 20px 29px 34px
     color: #666666
     font-size: 14px
     margin: 0
     border-top: 1px solid #ECECEC
 
 .list-dots__item
-  margin: 0 0 20px
+  margin: 0 0 16px
   position: relative
   padding: 0 0 0 26px
   &:before
@@ -2029,9 +2069,11 @@ footer
 
 //recommended
 .recommended
-  margin: 70px 0 231px
+  margin: 70px 0 206px
   h2
-    margin: 0 auto 70px
+    margin: 0 auto 56px
+  .card-title
+    line-height: 29px
 
 
 //calc
@@ -2040,7 +2082,8 @@ footer
   
 .calc__description
   text-align: center
-  margin: 8px 0 44px
+  font-size: 14px
+  margin: 4px 0 40px
 
 .form-calc
   display: flex
@@ -2056,6 +2099,11 @@ footer
 
 .btn-filter
   display: none
+
+.catalog-content__description
+  font-size: 14px
+  font-family: $museo
+  line-height: 24px
 
 
 @import "media"

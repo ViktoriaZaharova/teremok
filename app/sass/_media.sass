@@ -7,6 +7,9 @@
   .information-size__box p
     font-size: 16px
 
+  footer .navbar-nav .nav-item:nth-child(even)
+    width: 40%
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1045px)
@@ -140,8 +143,9 @@
         width: 12px
         height: 13px
         margin: 0 8px 0 0
-    .nav-links
-      font-size: 9px
+    .navbar-nav
+      .nav-links
+        font-size: 9px
 
   .btn-filter
     width: 100%
@@ -189,6 +193,9 @@
     .nav-item
       margin: 0
 
+  .calculation-two .calculation__content
+    padding-left: 0
+
 
 @media only screen and (max-width : 930px)
   .payment-options__card-image
@@ -210,7 +217,7 @@
 
 
 @media only screen and (max-width : 900px)
-  .nav-item
+  .nav-item, .navbar-nav .nav-item:first-child
     margin: 0
 
   .company-history__box
@@ -247,6 +254,9 @@
   .navbar-expand-md .navbar-nav .nav-link
     padding: 10px
     line-height: 25px
+
+  .nav-pills .nav-item:last-child
+    margin: 0 10px 20px
 
   header
     .navbar
@@ -310,6 +320,7 @@
 
   .company-history__box
     height: 120px
+    width: 50%
     padding: 10px 20px
 
   .constructed-objects .title-line
@@ -608,7 +619,7 @@
   .links-doc, .copyright
     font-size: 10px
 
-  footer .nav-item
+  footer .navbar-nav .nav-item
     width: 100%
     &:nth-child(even)
       width: 100%
@@ -620,7 +631,7 @@
       font-size: 8px
       line-height: normal
 
-  footer .nav-item
+  footer .navbar-nav .nav-item
     margin: 0 0 5px
 
   .address
