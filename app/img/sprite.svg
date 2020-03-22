@@ -513,6 +513,12 @@
         </g>
 
     </symbol>
+
+    <symbol id="arrow-top" viewBox="0 0 7 11">
+        <g>
+                <path d="M3.5 11V1M3.5 1L1 3.5M3.5 1L6 3.5" stroke="#18BA3C"/>
+        </g>
+    </symbol>
     <symbol id="arrow-bottom" viewBox="0 0 10 6">
         <g>
             <path d="M9 0.5L5 4.5L1 0.5"/>

@@ -7,7 +7,22 @@ $('.company-video__slider').slick({
         '</svg>\n</button>',
     nextArrow: '<button type="button" class="slick-next"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
         '    <path d="M1 1L6 6L1 11"/>\n' +
-        '</svg>\n</button>'
+        '</svg>\n</button>',
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+
+    ]
 });
 
 

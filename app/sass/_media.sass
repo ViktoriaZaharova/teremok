@@ -8,48 +8,434 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width : 1045px)
+  .phone
+    font-size: 16px
+
+  .nav-item
+    margin: 0 20px 0 0
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width : 991px)
+  .logo__motto
+    margin: 0 0 0 10px
+    padding: 0 0 0 10px
+
+  .logo
+    font-size: 18px
+
+  .header-top
+    padding: 20px 0
+
+  header
+    .list-group, .box-contacts
+      margin: 10px auto 0
+    .list-social
+      margin: 0 0 auto
+    .box-phone
+      margin: 0 30px 0 auto
+
+  .catalog__bg
+    display: none
+
+  .catalog
+    padding: 70px 0 90px
+
+  .nav-pills .nav-item
+    margin: 0 15px 0 0
+
+  .payment-options__card-title
+    font-size: 28px
+    line-height: normal
+
+  .payment-options__card
+    font-size: 12px
+
+  .calculation__image
+    min-width: auto
+    justify-content: flex-start
+    margin: 0
+    width: 100%
+
+  .form button
+    margin: 40px auto 0
+
+  .calculation__content
+    padding: 30px 0 40px
+    h2, .calculation__description
+      text-align: center
+
+  .company-history__image
+    width: 400px
+
+  .company-history__box-wrap
+    width: calc(100% - 400px)
+
+  .company-history
+    padding: 70px 0
+
+  .title-line
+    flex-wrap: wrap
+    text-align: center
+    justify-content: center
+    .links-title
+      padding: 0
+      margin: 0
+      &:before
+        display: none
+
+    h2
+      width: 100%
+
+  .links-title
+    font-size: 30px
+    line-height: normal
+
+  .constructed-objects
+    padding: 70px 0
+
+  .calculation-two
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: #fff
+      opacity: .9
+
+  .partner
+    padding: 70px 0
+
+  .partner__logo
+    width: 33%
+
+  .title-line .links
+    margin: 0
+
+  .articles .title-line .links
+    margin: 10px auto 0
+
+  .articles
+    padding: 70px 0 90px
+
+  .callback-content
+    flex-direction: column
+    align-items: center
+    h2
+      max-width: none
+      margin: 0 auto 20px
+    .form button
+      margin: 0
+
+  footer
+    .list-group
+      padding: 0
+      .list-group-item
+        font-size: 8px
+      .list-group-item__icon
+        width: 12px
+        height: 13px
+        margin: 0 8px 0 0
+    .nav-links
+      font-size: 9px
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+
+@media only screen and (max-width : 930px)
+  .payment-options__card-image
+    width: 220px
+
+  .payment-options__card
+    padding: 30px 220px 30px 32px
+
+@media only screen and (max-width : 900px)
+  .nav-item
+    margin: 0
+
+  .company-history__box
+    font-size: 9px
+    line-height: normal
+    .number
+      font-size: 24px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 767px)
+  .navbar-toggler
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    padding: 0
+    width: 20px
+    height: 15px
+    border: none
+    position: absolute
+    right: 20px
+    top: 35px
+    z-index: 1
+    span
+      display: block
+      width: 20px
+      height: 2px
+      background: #000
+      border-radius: 2px
+
+  header .list-social
+    margin: 0 40px auto 0
+
+  .navbar-expand-md .navbar-nav .nav-link
+    padding: 10px
+    line-height: 25px
+
+  header
+    .navbar
+      margin: 0 auto
+
+    .logo-wrapper
+      flex-direction: column
+      align-items: flex-start
+      max-width: 165px
+
+    .logo__motto
+      border: none
+        top: 1px solid #C4C4C4
+      margin: 10px 0 0
+      padding: 5px 0 0 0
+      max-width: none
+      //width: 100%
+      font-size: 12px
+      text-align: center
+
+  h1
+    font-size: 40px
+    line-height: normal
+
+  h2
+    font-size: 36px
+    line-height: normal
+
+  .catalog h2
+    margin: 0 0 30px
+
+  .nav-pills .nav-item
+    margin: 0 10px 20px
+
+  .nav-pills
+    margin: 0 0 30px
+
+  .payment-options__card
+    min-height: auto
+    margin: 0 0 100px
+
+  .company-history h2
+    max-width: none
+    text-align: center
+    margin: 0 auto 30px
+
+  .company-history__description
+    padding: 0
+    text-align: center
+    line-height: normal
+
+  .company-history__image
+    width: 100%
+
+  .company-history__box-wrap
+    width: 100%
+
+  .company-history__info
+    flex-wrap: wrap
+    margin: 40px 0 0
+
+  .company-history__box
+    height: 120px
+    padding: 10px 20px
+
+  .constructed-objects .title-line
+    margin: 0 0 30px
+
+  .company-video
+    padding: 70px 0 30px
+
+  .callback-content
+    padding: 40px 30px
+    h2
+      text-align: center
+    .form
+      flex-direction: column
+      align-items: center
+      width: 100%
+    .form-group
+      margin: 0 auto 15px
+      width: 100%
+
+  footer
+    padding: 120px 0 28px
+    .logo__text
+      flex-direction: column
+    .logo__motto
+      max-width: none
+    .nav-links
+      text-align: right
+    .box-contacts, .list-group
+      margin: 15px 0 0 0
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 575px)
+  .phone
+    font-size: 14px
 
+  .logo__icon
+    width: 25px
+    height: 25px
+    min-width: 25px
 
-/*==========  Mobile First  ==========*/
+  .logo
+    font-size: 16px
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+  header .logo__motto
+    margin: 5px 0 0 0
+    font-size: 9px
+    line-height: normal
+
+  .list-group-item
+    font-size: 10px
+    margin: 0 0 5px
+
+  .box-contacts
+    font-size: 12px
+    p
+      margin: 0 0 5px
+
+  header .box-phone
+    margin: 0 20px 0 auto
+
+  header .list-social
+    margin: 0 30px auto 0
+
+  header .logo-wrapper
+    max-width: 120px
+
+  .navbar-toggler
+    top: 23px
+    right: 15px
+
+  main
+    padding: 150px 0 170px
+
+  h1
+    font-size: 30px
+
+  h2
+    font-size: 26px
+
+  .calculation-time
+    width: 200px
+    height: 200px
+    font-size: 12px
+    line-height: 24px
+    p
+      padding: 15px 0
+
+  .links-title
+    font-size: 24px
+
+  .partner__logo
+    padding: 10px
+    margin: 0 0 15px
+
+  .partner__description
+    margin: 30px auto 40px
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+@media only screen and (max-width : 440px)
+  .navbar-toggler
+    top: 50px
+
+  header .list-social
+    margin: 0 0 auto
+
+  .payment-options__card
+    padding: 30px 40px 0 32px
+    margin: 0 0 40px
+
+  .payment-options__card-image
+    position: relative
+    margin: 0 auto
+
+  .payment-options__card-title
+    font-size: 20px
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+@media only screen and (max-width : 420px)
+  .phone
+    font-size: 11px
+    line-height: 20px
 
+  header .box-phone
+    margin: 0 10px 0 auto
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+  .list-social__links
+    width: 18px
+    height: 18px
 
+  .logo
+    font-size: 14px
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  .logo__icon
+    margin: 0 10px 0 0
 
+  header .logo__motto
+    font-size: 8px
+
+  .list-group-item
+    font-size: 8px
+
+  .list-group-item__icon
+    width: 12px
+    height: 13px
+    margin: 0 7px 0 0
+
+  .navbar-toggler
+    height: 12px
+    width: 18px
+    top: 48px
+
+  main
+    padding: 100px 0 120px
+
+  .calculation-time
+    width: 150px
+    height: 150px
+    font-size: 9px
+    line-height: 18px
+
+  .company-video__card
+    width: 96%
+
+  .links-doc, .copyright
+    font-size: 10px
+
+  footer .nav-item
+    width: 100%
+    &:nth-child(even)
+      width: 100%
+
+  footer .logo__text
+    margin: 0 0 0 10px
+    font-size: 14px
+    .logo__motto
+      font-size: 8px
+      line-height: normal
+
+  footer .nav-item
+    margin: 0 0 5px
+
+  .address
+    font-size: 10px
