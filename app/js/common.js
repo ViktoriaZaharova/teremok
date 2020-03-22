@@ -167,3 +167,9 @@ $(document).ready(function () {
 
     });
 });
+
+// mobile filter
+$('.btn-filter').click(function () {
+   $('.sidebar').fadeToggle();
+});
+

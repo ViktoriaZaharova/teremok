@@ -1500,7 +1500,11 @@ footer {
 
 .sidebar {
   max-width: 240px;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .filter-wrapper {
   border: 1px solid #ECECEC;
@@ -2380,6 +2384,9 @@ footer {
   .form-calc button {
     margin: 0 0 0 8px; }
 
+.btn-filter {
+  display: none; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2497,7 +2504,38 @@ footer {
       height: 13px;
       margin: 0 8px 0 0; }
   footer .nav-links {
-    font-size: 9px; } }
+    font-size: 9px; }
+  .btn-filter {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    background: #FAF8F5;
+    margin: 0 0 20px;
+    border: 1px solid #ECECEC; }
+  .sidebar {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    max-width: 280px;
+    z-index: 7;
+    height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    padding: 0 0 30px;
+    -webkit-box-shadow: 0 0 10px rgba(34, 34, 34, 0.2);
+            box-shadow: 0 0 10px rgba(34, 34, 34, 0.2); }
+    .sidebar .btn-group {
+      padding: 0 30px; }
+  .variable-house__content {
+    padding: 40px 30px 35px; }
+  .variable-house__list--item {
+    width: 20%; }
+  .seo-section {
+    padding: 70px 0 100px; } }
 
 @media only screen and (max-width: 930px) {
   .payment-options__card-image {
@@ -2571,7 +2609,7 @@ footer {
   h1 {
     font-size: 40px;
     line-height: normal; }
-  h2 {
+  h2, .title-page {
     font-size: 36px;
     line-height: normal; }
   .catalog h2 {
@@ -2634,7 +2672,22 @@ footer {
     footer .nav-links {
       text-align: right; }
     footer .box-contacts, footer .list-group {
-      margin: 15px 0 0 0; } }
+      margin: 15px 0 0 0; }
+  .pagination {
+    margin: 40px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .pagination .page-link {
+      padding: 10px 13px; }
+  .variable-house__list--links {
+    font-size: 12px; }
+  .variable-house__list--item {
+    width: 33%; }
+  .table-body .line {
+    padding: 19px 20px; }
+  .table-body h3 {
+    font-size: 16px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 575px) {
@@ -2670,7 +2723,7 @@ footer {
     padding: 150px 0 170px; }
   h1 {
     font-size: 30px; }
-  h2 {
+  h2, .title-page {
     font-size: 26px; }
   .calculation-time {
     width: 200px;
@@ -2685,7 +2738,31 @@ footer {
     padding: 10px;
     margin: 0 0 15px; }
   .partner__description {
-    margin: 30px auto 40px; } }
+    margin: 30px auto 40px; }
+  .sorting-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .sorting {
+    margin: 0 0 10px; }
+  .breadcrumb-item a, .breadcrumb-item {
+    font-size: 12px; }
+  .breadcrumb-item {
+    margin: 0 0 5px; }
+  .table__house-parameters {
+    font-size: 12px; }
+  .table-body {
+    line-height: 18px; }
+  .table__house-parameters .table-item:first-child {
+    width: 35%; }
+  .table__house-parameters .table-item:nth-child(2) {
+    width: 35%; }
+  .table__house-parameters .table-item:last-child {
+    width: 30%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 440px) {
@@ -2700,7 +2777,19 @@ footer {
     position: relative;
     margin: 0 auto; }
   .payment-options__card-title {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .table-head {
+    padding: 20px 0; }
+  .table-body .line {
+    padding: 15px 0; }
+  .table__house-parameters {
+    font-size: 9px; }
+  .table-body h3 {
+    font-size: 13px; }
+  .table__house-parameters .table-item:first-child {
+    width: 30%; }
+  .table__house-parameters .table-item:nth-child(2) {
+    width: 40%; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 420px) {
@@ -2752,4 +2841,10 @@ footer {
   footer .nav-item {
     margin: 0 0 5px; }
   .address {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .catalog-content__description {
+    font-size: 14px; }
+  .variable-house__list--item {
+    width: 50%; }
+  .advantages-house__icon {
+    margin: 5px 10px 0 0; } }
