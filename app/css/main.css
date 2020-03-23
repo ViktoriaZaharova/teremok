@@ -627,7 +627,7 @@ main {
     width: 100%;
     height: 100%;
     background: #1a1b24;
-    opacity: .35; }
+    opacity: .65; }
 
 .main-price {
   display: -webkit-box;
@@ -664,8 +664,8 @@ main {
   left: 154px;
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
           transform: matrix(-1, 0, 0, 1, 0, 0);
-  -webkit-filter: blur(9px);
-          filter: blur(9px);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
   width: 132px; }
 
 .catalog__bg .img2 {
@@ -674,8 +674,8 @@ main {
   -webkit-transform: matrix(0.35, 0.94, 0.94, -0.35, 0, 0);
           transform: matrix(0.35, 0.94, 0.94, -0.35, 0, 0);
   opacity: .7;
-  -webkit-filter: blur(9px);
-          filter: blur(9px);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
   width: 83px; }
 
 .nav-pills {
@@ -779,7 +779,7 @@ main {
   font-weight: 600;
   font-family: "MuseoSansCyrl", sans-serif;
   width: 61px;
-  height: 22px;
+  height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -855,7 +855,7 @@ main {
 .payment-options__card.bg-yellow {
   color: #532612; }
   .payment-options__card.bg-yellow .payment-options__card-text {
-    max-width: 179px;
+    max-width: 195px;
     opacity: .7; }
 
 .calculation {
@@ -1242,7 +1242,8 @@ main {
   color: #999999;
   font-size: 14px;
   font-family: "MuseoSansCyrl", sans-serif;
-  line-height: 20px; }
+  line-height: 20px;
+  font-weight: 300; }
 
 .slick-slide {
   outline: none; }
@@ -1525,7 +1526,8 @@ footer {
   margin: 0 9px; }
 
 .breadcrumb-item.active {
-  color: #222222; }
+  color: #222222;
+  font-size: 14px; }
   .breadcrumb-item.active:before {
     margin: 0 23px 0 9px; }
 
@@ -1560,6 +1562,13 @@ footer {
     font-size: 11px;
     font-weight: 600;
     color: #222222; }
+  .technology-wrapper .nav-link__icon {
+    margin: 4px 16px 0 0;
+    width: 23px;
+    min-width: 23px;
+    height: 19px; }
+  .technology-wrapper .nav-link.active {
+    color: #18BA3C; }
   .technology-wrapper .nav-link {
     font-size: 14px;
     line-height: 23px;
@@ -1576,14 +1585,10 @@ footer {
     .technology-wrapper .nav-link:hover {
       border: none;
       color: #18BA3C; }
+    .technology-wrapper .nav-link:first-child .nav-link__icon {
+      height: 17px; }
   .technology-wrapper .nav-link__text {
     border: none; }
-  .technology-wrapper .nav-link__icon {
-    margin: 0 16px 0 0;
-    width: 23px;
-    height: 18px; }
-  .technology-wrapper .nav-link.active {
-    color: #18BA3C; }
 
 .btn-group {
   display: -webkit-box;
@@ -2040,7 +2045,12 @@ footer {
        object-fit: cover; }
   .product-image__max a {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    display: none; }
+    .product-image__max a:first-child {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
 
 .icon-search-plus {
   position: absolute;
@@ -2138,11 +2148,13 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
     .product-price .price .icon-rub {
-      font-size: 32px; }
+      font-size: 32px;
+      line-height: 32px;
+      margin: 0; }
 
 .links-print {
   display: -webkit-box;
@@ -2196,7 +2208,8 @@ footer {
 
 .payment-options__icon {
   margin: 0 13px  0 0;
-  width: 21px;
+  width: 22px;
+  min-width: 22px;
   height: 22px; }
 
 .payment-options__text {
@@ -2318,6 +2331,9 @@ footer {
   margin: 0 0 87px; }
   .composition-production__nav-pills .nav-item {
     margin: 0 0 -4px; }
+    .composition-production__nav-pills .nav-item:nth-child(2) .nav-link .tab-icon {
+      width: 65px;
+      min-width: 65px; }
   .composition-production__nav-pills .nav-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2818,7 +2834,11 @@ footer {
   .recommended h2 {
     margin: 0 auto 40px; }
   .recommended {
-    margin: 50px 0 90px; } }
+    margin: 50px 0 90px; }
+  .payment-options__card-text, .payment-options__card.bg-yellow .payment-options__card-text {
+    max-width: none; }
+    .payment-options__card-text br, .payment-options__card.bg-yellow .payment-options__card-text br {
+      display: none; } }
 
 @media only screen and (max-width: 720px) {
   .form-calc .form-group {

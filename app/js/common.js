@@ -153,7 +153,7 @@ $(".dec2__bathrooms").val($(".slider-range__bathrooms").slider("value"));
 $(document).ready(function () {
     // var srcValue = $('.product-image__max img').attr('src');
     var penImg = $('.product-image__max img');
-    var linksImg = $('.product-image__max a');
+    // var linksImg = $('.product-image__max a');
 
     $('.product-image__min div.item').on('click', function () {
         $('.product-image__min div.item').removeClass('click-item');
@@ -163,7 +163,7 @@ $(document).ready(function () {
         imgPath = $(this).attr('data-img-path');
 
         penImg.attr('src', imgPath);
-        linksImg.attr('href', imgPath);
+        // linksImg.attr('href', imgPath);
 
     });
 });
@@ -172,4 +172,15 @@ $(document).ready(function () {
 $('.btn-filter').click(function () {
    $('.sidebar').fadeToggle();
 });
+
+// $('[data-fancybox="gallery"]').fancybox({
+//     thumbs : {
+//         autoStart : true,
+//         axis      : 'x'
+//     },
+//     infobar: false,
+//     buttons: [
+//         "close"
+//     ]
+// });
 

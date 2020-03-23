@@ -475,7 +475,7 @@ main
     width: 100%
     height: 100%
     background: #1a1b24
-    opacity: .35
+    opacity: .65
 
 .main-price
   display: flex
@@ -511,7 +511,7 @@ main
     top: 124px
     left: 154px
     transform: matrix(-1, 0, 0, 1, 0, 0)
-    filter: blur(9px)
+    filter: blur(4px)
     width: 132px
 
   .img2
@@ -519,7 +519,7 @@ main
     top: 202px
     transform: matrix(0.35, 0.94, 0.94, -0.35, 0, 0)
     opacity: .7
-    filter: blur(9px)
+    filter: blur(4px)
     width: 83px
 
 .nav-pills
@@ -605,7 +605,7 @@ main
   font-weight: 600
   font-family: $museo
   width: 61px
-  height: 22px
+  height: 32px
   display: flex
   align-items: center
   letter-spacing: 0.1em
@@ -636,6 +636,7 @@ main
 .icon-rub
   font-family: $rub
   font-size: 20px
+  //line-height: 20px
   margin: 0 0 -3px
 
 .card-description
@@ -674,7 +675,7 @@ main
   color: #532612
 
   .payment-options__card-text
-    max-width: 179px
+    max-width: 195px
     opacity: .7
 
 //.calculation
@@ -1026,6 +1027,7 @@ main
   font-size: 14px
   font-family: $museo
   line-height: 20px
+  font-weight: 300
 
 
 //.company-video
@@ -1307,6 +1309,7 @@ footer
 
 .breadcrumb-item.active
   color: #222222
+  font-size: 14px
 
   &:before
     margin: 0 23px 0 9px
@@ -1344,7 +1347,14 @@ footer
     font-size: 11px
     font-weight: 600
     color: #222222
+  .nav-link__icon
+    margin: 4px 16px 0 0
+    width: 23px
+    min-width: 23px
+    height: 19px
 
+  .nav-link.active
+    color: #18BA3C
   .nav-link
     font-size: 14px
     line-height: 23px
@@ -1360,17 +1370,13 @@ footer
     &:hover
       border: none
       color: #18BA3C
-
+    &:first-child
+      .nav-link__icon
+        height: 17px
   .nav-link__text
     border: none
 
-  .nav-link__icon
-    margin: 0 16px 0 0
-    width: 23px
-    height: 18px
 
-  .nav-link.active
-    color: #18BA3C
 
 
 .btn-group
@@ -1785,6 +1791,9 @@ footer
   a
     width: 100%
     height: 100%
+    display: none
+    &:first-child
+      display: flex
 
 .icon-search-plus
   position: absolute
@@ -1865,10 +1874,12 @@ footer
     font-size: 32px
     font-family: $museo
     display: flex
-    align-items: center
+    align-items: flex-end
 
     .icon-rub
       font-size: 32px
+      line-height: 32px
+      margin: 0
 
 .links-print
   display: flex
@@ -1908,7 +1919,8 @@ footer
 
 .payment-options__icon
   margin: 0 13px  0 0
-  width: 21px
+  width: 22px
+  min-width: 22px
   height: 22px
 
 .payment-options__text
@@ -2002,6 +2014,11 @@ footer
   margin: 0 0 87px
   .nav-item
     margin: 0 0 -4px
+    &:nth-child(2)
+      .nav-link
+        .tab-icon
+          width: 65px
+          min-width: 65px
   .nav-link
     display: flex
     flex-direction: column
