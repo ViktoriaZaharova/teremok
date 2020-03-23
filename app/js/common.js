@@ -173,14 +173,5 @@ $('.btn-filter').click(function () {
    $('.sidebar').fadeToggle();
 });
 
-// $('[data-fancybox="gallery"]').fancybox({
-//     thumbs : {
-//         autoStart : true,
-//         axis      : 'x'
-//     },
-//     infobar: false,
-//     buttons: [
-//         "close"
-//     ]
-// });
+
 
